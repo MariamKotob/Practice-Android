@@ -1,0 +1,3 @@
+# Practice-Android
+--App lifecycle
+Is an application that pushes a message whenever the app runs one of the main methods in the app lifecycle e.g onCreate, onStart, onResume...
