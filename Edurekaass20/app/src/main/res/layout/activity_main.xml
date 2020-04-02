@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LayoutHome"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="0dp"
+    android:background="#FF0000"
+    tools:context=".MainActivity">
+
+    <RadioGroup
+        android:id="@+id/colorRadioGroup"
+        android:layout_width="382dp"
+        android:layout_height="89dp"
+        android:onClick="redOnCheck"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <RadioButton
+            android:id="@+id/RBRed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:longClickable="false"
+            android:onClick="redOnCheck"
+            android:text="RED"
+            android:textColorLink="#0000FF"
+            android:textSize="10sp" />
+
+        <RadioButton
+            android:id="@+id/RBGreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="redgreenOnCheck"
+            android:text="GREEN"
+            android:textSize="10sp" />
+
+        <RadioButton
+            android:id="@+id/RDBlue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="blueOnCheck"
+            android:text="BLUE"
+            android:textSize="10sp" />
+    </RadioGroup>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="395dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="44dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/colorRadioGroup" />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutCompat"
+        android:layout_width="408dp"
+        android:layout_height="602dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/colorRadioGroup"
+        tools:layout_editor_absoluteX="1dp">
+
+        <Button
+            android:id="@+id/googleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_green_light"
+            android:fontFamily="sans-serif-black"
+            android:onClick="setGoogleButton"
+            android:padding="8dp"
+            android:text="Google" />
+
+        <Button
+            android:id="@+id/yahooButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_green_light"
+            android:fontFamily="sans-serif-black"
+
+            android:onClick="setYahooButton"
+            android:padding="8dp"
+            android:text="Yahoo" />
+
+        <WebView
+            android:id="@+id/pageViewer"
+            android:layout_width="397dp"
+            android:layout_height="458dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat" />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+
+</android.support.constraint.ConstraintLayout>
