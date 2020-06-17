@@ -25,17 +25,31 @@
         tools:layout_editor_absoluteX="16dp" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/timertv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="00:30"
+        android:text="0:30"
         android:textColor="#7E7C7C"
-        android:textSize="24sp"
+        android:textSize="65sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/timerSB" />
+
+    <Button
+        android:id="@+id/controllerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15px"
+        android:onClick="controlTimer"
+        android:padding="5px"
+        android:text="GO!"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timertv" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
